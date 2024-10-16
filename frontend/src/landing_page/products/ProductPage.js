@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
 import LeftSection from "./LeftSection";
+import OpenAccount from "../../OpenAccount";
 
 function ProductPage() {
   return (

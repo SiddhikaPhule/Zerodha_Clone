@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Universe() {
+
+  const navigate = useNavigate();
+  const handleSignupClick = () => {
+      navigate('/signup'); // Navigate to the signup page
+    };
+
   return (
     <div className="container mt-5">
       <div className="row text-center">
@@ -72,7 +79,7 @@ function Universe() {
             mis-selling.
           </p>
         </div>
-        <button className='p-2.5 btn btn-primary fs-5 mt-5 mb-5' style={{width:"12%", margin: "0 auto", borderRadius: "4px"}}>Sign up now</button>
+        <button className='p-2.5 btn btn-primary fs-5 mt-5 mb-5' onClick={handleSignupClick} style={{width:"12%", margin: "0 auto", borderRadius: "4px"}}>Sign up now</button>
 
       </div>
     </div>
